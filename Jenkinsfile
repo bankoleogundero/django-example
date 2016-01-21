@@ -43,7 +43,7 @@ node ('kubernetes'){
             writeFile file: 'Dockerfile', text: 'FROM django:onbuild'
           }
           sh "docker build --rm -t ${clusterImageName} ."
-          sh "docker push ${clusterImageName}"
+         // sh "docker push ${clusterImageName}"
 
           def rc = getKubernetesJson {
             port = 8000
