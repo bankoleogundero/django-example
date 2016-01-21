@@ -1,0 +1,13 @@
+---
+pipeline: "workflows/django/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "django-example3"
+codeReview: false
+links:
+  Job: "http://jenkins.jml.10.10.163.6.xip.io/job/django-example3"
+  Production: "http://fabric8.jml.10.10.163.6.xip.io/kubernetes/pods?namespace=django-example3-production"
+  Room: "http://letschat.jml.10.10.163.6.xip.io/#!/room/569fdae5adf0021500b60a8c"
+  Staging: "http://fabric8.jml.10.10.163.6.xip.io/kubernetes/pods?namespace=django-example3-staging"
+environments:
+  Staging: "django-example3-staging"
+  Production: "django-example3-production"
+useLocalFlow: true
